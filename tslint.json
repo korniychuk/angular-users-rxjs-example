@@ -6,7 +6,7 @@
     "deprecation": {
       "severity": "warning"
     },
-    "component-class-suffix": true,
+    "component-class-suffix": [true, "Component", "Container", "Modal"],
     "contextual-lifecycle": true,
     "directive-class-suffix": true,
     "directive-selector": [
