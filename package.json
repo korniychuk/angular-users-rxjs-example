@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:git-pages": "[[ -d 'docs' ]] && rm -rf docs; ng build --aot --prod; mv dist/angular-users-rxjs-example docs",
+    "build:git-pages": "[[ -d 'docs' ]] && rm -rf docs; ng build --aot --prod --base-href \"$(git remote -v | head -n 1 | sed -En 's/.+\\/(.+)\\..+$/\\1/p')\"; mv dist/angular-users-rxjs-example docs",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
