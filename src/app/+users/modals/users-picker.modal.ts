@@ -18,7 +18,7 @@ export interface UsersPickerSaveEvent {
     <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
       <div class="modal-header">
         <h4 class="modal-title pull-left">Pick Users</h4>
-        <button type="button" class="close pull-right" aria-label="Close" (click)="$bsModalRef.hide()">
+        <button type="button" class="close pull-right" aria-label="Close" (click)="hide()">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
