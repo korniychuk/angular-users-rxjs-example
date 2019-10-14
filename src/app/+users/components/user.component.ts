@@ -4,7 +4,9 @@ import { User } from '../types';
 
 @Component({
   selector: 'app-user',
-  template: `#{{ user.id }} | {{ user.name }}`,
+  template: `
+  <div [title]="user | json">{{ user.name }}</div>
+  `,
   styles: [`
     :host {
         display: inline-block;
